@@ -1,0 +1,30 @@
+{
+  "name": "shiki-vue",
+  "private": true,
+  "version": "1.0.0",
+  "main": "./dist/shiki-vue.umd.js",
+  "module": "./dist/shiki-vue.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/shiki-vue.es.js",
+      "require": "./dist/shiki-vue.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.25"
+  },
+  "devDependencies": {
+    "@nuxt/postcss8": "^1.1.3",
+    "@vitejs/plugin-vue": "^2.2.0",
+    "autoprefixer": "^10.4.2",
+    "postcss": "^8.4.6",
+    "shiki": "^0.10.0",
+    "tailwindcss": "^3.0.22",
+    "vite": "^2.8.0"
+  }
+}
